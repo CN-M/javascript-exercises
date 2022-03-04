@@ -7,17 +7,11 @@ const subtract = function(a,b) {
 };
 
 const sum = function(array) {
-	const answer = array.reduce((total, item) => {
-    return total += item
-  }, 0);
-  return answer
+  return array.reduce((total, item) => total += item, 0)
 };
 
 const multiply = function(array) {
-  const answer =  array.reduce((total, item) => {
-      return total *= item;
-  }, 1);
-  return answer
+  return array.reduce((total, item) => total *= item, 1);
 };
 
 const power = function(a,b) {
